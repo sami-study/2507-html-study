@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이것저것 해보는 파일</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #ccc;
+      }
+      td {
+        padding: 5px; /* 셀 테두리와 내용 사이의 간격(패딩) */
+      }
+    </style>
+  </head>
+  <body>
+    <p><b>단축키 Alt+화살표로 줄 전체 이동</b></p>
+    <ul>
+      <li>목록2</li>
+      <li>목록1</li>
+      <li>목록3</li>
+      <li>목록4</li>
+    </ul>
+    <hr />
+    <table>
+      <caption>
+        <strong>표 만들기 연습</strong>
+        <p>행 합치고 그다음거 어떻게 입력되는지 알아보기 위한 연습코드</p>
+        <tr>
+          <!-- 1행 -->
+          <th>1열</th>
+          <th>2열</th>
+          <th>3열</th>
+        </tr>
+        <tr>
+          <!-- 2행 -->
+          <td>2행1열</td>
+          <td rowspan="2">2행2열<br />3행2열</td>
+          <td>2행3열</td>
+        </tr>
+        <tr>
+          <!-- 3행 -->
+          <td>3행1열</td>
+          <!-- 2열 건너뛰고 3열에 입력됨 -->
+          <td>3행3열</td>
+        </tr>
+      </caption>
+    </table>
+  </body>
+</html>
