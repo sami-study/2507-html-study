@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>이미지 삽입하기</title>
+    <style>
+      img {
+        border: 1px solid #ccc;
+      }
+      figure {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>제품 선택</h1>
+    <!-- 설명을 붙이고 싶은 대상을 <figure>태그로 감싼다
+      여러 개의 이미지나 미디어 파일에 하나의 설명 글을 표시할 수도 있음 -->
+    <figure>
+      <img src="images/prod.jpg" alt="예멘 모카 마타리" />
+      <!-- <figcaption>태그를 이용해 제목이나 설명 글을 입력한다 -->
+      <figcaption>예멘 모카 마타리(Yemen Mocha Mattari)</figcaption>
+    </figure>
+    <p>
+      이미지와 설명이 figure 태그로 묶여있기 때문에 이미지 위치를 옮기면 설명도
+      함께 옮겨진다.
+    </p>
+    <hr />
+    <h1>p.105 예제</h1>
+    <img
+      src="images/fantasy.jpg"
+      alt="배 두 척이 있는 강 위로 열기구가 떠 있는 사진"
+    />
+  </body>
+</html>
